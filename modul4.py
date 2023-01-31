@@ -1,4 +1,4 @@
-ZADANIE: PALINDROMY
+# ZADANIE: PALINDROMY
 
 print("Program sprawdzajacy czy slowo jest palindromem")
 def czyPalindrom(x):
@@ -11,3 +11,6 @@ def czyPalindrom(x):
 print("Podaj słowo : ")
 word = input()
 print("Podane slowo " + ("jest " if(czyPalindrom(word)) else "nie jest ") + "palindromem")
+
+
+
