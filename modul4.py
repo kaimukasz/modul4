@@ -37,5 +37,10 @@ elif kalk == "3":
 elif kalk == "4":
     print(f"Dzielę {a} i {b} ")
     print("Wynik to", a / b)
+    
+    
+    
+    
+    
 else:
     print("koniec")
