@@ -17,30 +17,28 @@ print("Podane slowo " + ("jest " if(czyPalindrom(word)) else "nie jest ") + "pal
 # ZADANIE: KALKULATOR
 
 import logging
+logging.basicConfig()
+logging.root.setLevel(logging.NOTSET)
+log = logging.getLogger(__name__)
 
 kalk = input("Podaj działanie, posługując się odpowiednią liczbą: 1 Dodawanie, 2 Odejmowanie, 3 Mnożenie, 4 Dzielenie: ")
 a = float(input("Podaj składnik 1: "))
 b = float(input("Podaj składnik 2: "))
 
 if kalk == "1":
-    logging.info('Komunikat informacyjny')
+    log.info('Komunikat informacyjny')
     c = float(input("Podaj składnik 3: "))
-    print(f"Dodaję {a}, {b} i {c}")
-    print("Wynik to", a + b + c)
+    log.info(f"Dodaję {a}, {b} i {c}")
+    log.info("Wynik to", a + b + c)
 elif kalk == "2":
-    print(f"Odejmuję {a} i {b} ")
-    print("Wynik to", a - b)
+    log.info(f"Odejmuję {a} i {b} ")
+    log.info("Wynik to", a - b)
 elif kalk == "3":
     c = float(input("Podaj składnik 3: "))
-    print(f"Mnożę {a}, {b} i {c}")
-    print("Wynik to", a * b * c)
+    log.info(f"Mnożę {a}, {b} i {c}")
+    log.info("Wynik to", a * b * c)
 elif kalk == "4":
-    print(f"Dzielę {a} i {b} ")
-    print("Wynik to", a / b)
-    
-    
-    
-    
-    
+    log.info("Dzielę {a} i {b} ")
+    log.info("Wynik to", a / b)
 else:
-    print("koniec")
+    log.info("koniec")
